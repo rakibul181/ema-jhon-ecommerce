@@ -1,13 +1,11 @@
 import React from 'react';
 import './product.css'
 
-const Product = () => {
+const Product = (props) => {
+    const{category,id,img,name,price,quantity,ratings,stock} = props.product 
     return (
-        <div className='shop-container'>
-            <div className='prouct-container'>
-                product
-            </div>
-            <div className='cart-container'> cart</div>
+        <div className='product'>
+            <img src={img} alt={'this is:' +name} />
         </div>
     );
 };
