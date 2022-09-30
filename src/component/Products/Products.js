@@ -29,8 +29,17 @@ const Products = () => {
         .then(data => setProducts(data))
     },[])
         const handleAddToCart = (product)=>{
-             const newcart = [...cart,product]
-             setCart(newcart)
+            let newCart
+            const exeistProduct = cart.find(newItem => cart.id === newItem.id)
+            if(!exeistProduct){
+                product.quantity = 1
+                newCart = [...cart, product]
+            }
+            else{git 
+                product.quantity = product.quantity +1
+                newCart = [...cart, product]
+            }
+             setCart(newCart)
              addToDb(product.id)
         }
     return (
