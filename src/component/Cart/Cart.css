@@ -1,0 +1,21 @@
+.cart-cal{
+    position: sticky;
+    top: 0;
+    padding:25px;
+    height: 100%;
+    background-color: #FF99004D;
+
+}
+.cart-cal h2{
+    text-align: center;
+}
+.total-amount{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    
+    color: #0E161A;
+}
