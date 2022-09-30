@@ -2,9 +2,17 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './products.css'
 
+
 const Products = () => {
     const [products, setProducts] = useState([])
     const [cart,setCart] = useState([])
+    const [count, setCount] = useState(0)
+
+    
+    setCount(count+1)
+    console.log(count)
+    
+
     useEffect(()=>{
         fetch('products.json')
         .then(res => res.json())
