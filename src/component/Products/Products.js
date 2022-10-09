@@ -35,7 +35,7 @@ const Products = () => {
                 product.quantity = 1
                 newCart = [...cart, product]
             }
-            else{git 
+            else{ 
                 product.quantity = product.quantity +1
                 newCart = [...cart, product]
             }
