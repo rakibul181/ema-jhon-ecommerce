@@ -8,7 +8,7 @@ const Header = () => {
         <nav className='header'>
              <img src={logo} alt="" srcset="" />
              <div className='nav-item'>
-                <Link to="/home">HOME</Link>
+                <Link to="/shop">SHOP</Link>
                 <Link to="/order">ORDER</Link>
                 <Link to="/invertoey">INVENTORY</Link>
                 <Link to="/about">ABOUT</Link>
