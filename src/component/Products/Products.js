@@ -8,7 +8,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const Products = () => {
     const products = useLoaderData()
-    console.log(products)
+    // console.log(products)
     const [cart,setCart] = useState([])
      
     useEffect(()=>{

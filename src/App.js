@@ -3,8 +3,10 @@ import './App.css';
 import ABOUT from './component/ABout/ABOUT';
 import Inventory from './component/Inventory/Inventory';
 import Main from './component/Layout/Main';
+import Login from './component/Login/Login';
 import Order from './component/Order/Order';
 import Products from './component/Products/Products';
+import Resister from './component/Resister/Resister';
 import { loadCartandProduct } from './Loder/LoadCart&Product';
  
  
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
         path:'shop',
         loader:()=> fetch('products.json'),
         element:<Products></Products>
+      },
+      {
+        path:'login',
+        loader:()=> fetch('products.json'),
+        element: <Login></Login>
+      },
+      {
+        path:'resister',
+        loader:()=> fetch('products.json'),
+        element:<Resister></Resister>
       },
       {
         path:'order',
