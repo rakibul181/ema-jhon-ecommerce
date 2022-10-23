@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Cart.css'
 
 const Cart = ({cart}) => {
+    const navigate = useNavigate()
     // console.log(cart)
     let total = 0
     let shiping = 0
@@ -29,7 +31,8 @@ const Cart = ({cart}) => {
                 <p>Tax: ${tax}</p>
             </div>
             <p className='total-amount'>Grand Total: ${totalCost}</p>
-  
+            <Link to={'../order'}> <button>Chack Out</button></Link>
+            <Link to={'../shipping'}> <button>Shipping</button></Link>
         </div>
     );
 };

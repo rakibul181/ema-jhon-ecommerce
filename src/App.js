@@ -7,7 +7,9 @@ import Login from './component/Login/Login';
 import Order from './component/Order/Order';
 import Products from './component/Products/Products';
 import Resister from './component/Resister/Resister';
+import Shipping from './component/Shipping/Shipping';
 import { loadCartandProduct } from './Loder/LoadCart&Product';
+import PriveteRoutes from './Routes/PriveteRoutes';
  
  
 
@@ -46,6 +48,10 @@ const router = createBrowserRouter([
       {
         path:'invertoey',
         element:<Inventory></Inventory>
+      },
+      {
+        path:'shipping',
+        element:<PriveteRoutes><Shipping></Shipping></PriveteRoutes>
       },
       {
         path:'about',
